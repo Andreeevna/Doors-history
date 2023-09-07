@@ -1,9 +1,31 @@
 .header {
 	padding: 20px 0 20px 0;
+	color: #fff;
 	background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0, transparent);
 }
 
 .nav {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+}
+
+.header__menu_link {
+}
+
+.header__logo {
+	display: flex;
+	align-items: center;
+	gap: 0 10px;
+}
+
+.logo__text {
+	font-family: 'Satisfy';
+	font-size: 30px;
+	line-height: 1;
+}
+
+.header__contact {
+	display: flex;
+	gap: 0 15px;
 }

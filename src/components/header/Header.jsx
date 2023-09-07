@@ -14,7 +14,9 @@ const Header = () => {
 					<div className={styles.header__logo}>
 						{/* <img width="38" src={logoSvg} alt="Pizza logo" /> */}
 						<h2 className={styles.logo__name}>Дверная история</h2>
-						<span>16 лет вместе </span>
+						<p className={styles.logo__text}>16 лет вместе</p>
+
+						{/* <div className={styles.logo__text}>16 лет вместе</div> */}
 					</div>
 					<div className={styles.header__contact}>
 						<span className={styles.contact__text}>Связь с компанией</span>
