@@ -1,3 +1,66 @@
+@font-face {
+	font-family: 'EuclidFlexLight';
+	src: url('../fonts/EuclidFlex/EuclidFlexLight.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'EuclidFlexRegular';
+	src: url('../fonts/EuclidFlex/EuclidFlexRegular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'EuclidFlexMedium';
+	src: url('../fonts/EuclidFlex/EuclidFlexMedium.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'EuclidFlexSemiBold';
+	src: url('../fonts/EuclidFlex/EuclidFlexSemiBold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'EuclidFlexBold';
+	src: url('../fonts/EuclidFlex/EuclidFlexBold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'EuclidFlexItalic';
+	src: url('../fonts/EuclidFlex/EuclidFlexItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'EuclidFlexMediumItalic';
+	src: url('../fonts/EuclidFlex/EuclidFlexMediumItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'EuclidFlexMediumItalic';
+	src: url('../fonts/EuclidFlex/EuclidFlexMediumItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'EuclidFlexBoldItalic';
+	src: url('../fonts/EuclidFlex/EuclidFlexBoldItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 700;
+}
+
 html {
 	box-sizing: border-box;
 }
@@ -98,6 +161,8 @@ video {
 }
 
 body {
+	font-family: 'EuclidFlexRegular', 'sans serif';
+	font-size: 16px;
 	line-height: 1;
 }
 ol,
@@ -118,4 +183,15 @@ q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+body {
+	color: #3c3c3b;
+	background-color: #fff;
+}
+
+.bg_container {
+	margin: 0 auto;
+	padding: 0 10px;
+	max-width: 1420px;
 }
