@@ -1,5 +1,6 @@
 .header {
-	padding: 20px 0 20px 0;
+	padding: 10px 0 10px 0;
+	font-size: 18px;
 	color: #fff;
 	background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0, transparent);
 }
@@ -15,17 +16,27 @@
 
 .header__logo {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	gap: 0 10px;
+	/* gap: 0 15px; */
+	font-family: 'Satisfy';
+}
+
+.logo__name {
+	font-size: 36px;
 }
 
 .logo__text {
-	font-family: 'Satisfy';
-	font-size: 30px;
+	font-size: 26px;
 	line-height: 1;
 }
 
 .header__contact {
 	display: flex;
-	gap: 0 15px;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px 0;
+}
+
+.contact__link {
 }
