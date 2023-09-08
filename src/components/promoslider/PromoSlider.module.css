@@ -1,0 +1,24 @@
+.promo_container {
+	position: relative;
+	height: 90vh;
+}
+
+.promo {
+	position: absolute;
+	top: 30%;
+	left: 0;
+	right: 0;
+	z-index: 50;
+}
+
+.promo__item_title {
+	margin-bottom: 20px;
+	font-weight: 400;
+	font-size: 56px;
+	color: inherit;
+}
+
+.promo__item_link {
+	padding-bottom: 2px;
+	border-bottom: 1px solid #3c3c3b;
+}
