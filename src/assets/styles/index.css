@@ -209,6 +209,12 @@ a {
 	max-width: 1420px;
 }
 
+.av_container {
+	margin: 0 auto;
+	padding: 0 10px;
+	max-width: 1120px;
+}
+
 .swiper {
 	position: relative;
 	width: 100%;
