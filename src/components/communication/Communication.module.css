@@ -1,0 +1,44 @@
+.communication {
+	margin-bottom: 120px;
+}
+
+.communication_box {
+	display: flex;
+	justify-content: space-between;
+}
+
+.communication_box__form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-basis: 50%;
+}
+
+.communication_box__title {
+	max-width: 80%;
+	margin-bottom: 70px;
+	font-size: 56px;
+	line-height: 1.3;
+	font-weight: 600;
+}
+
+.desc_box {
+	flex-basis: 45%;
+}
+
+.desc_box__item {
+	margin-bottom: 70px;
+	padding: 70px 20px 70px 20px;
+	display: flex;
+	align-items: center;
+	border-radius: 20px;
+	box-shadow: -20px 20px 20px 20px rgba(0, 0, 0, 0.04);
+}
+
+.desc_box__text {
+	margin-left: 20px;
+	font-size: 26px;
+	line-height: 1.2;
+	color: #383451;
+}
