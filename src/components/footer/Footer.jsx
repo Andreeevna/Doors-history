@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Logo from '../logo/Logo'
 import './../../assets/styles/index.css'
 import styles from './Footer.module.css'
 
@@ -11,10 +12,7 @@ const Footer = () => {
 					<div className={styles.footer_top__contact}>
 						<h2 className={styles.footer_top__title}></h2>
 					</div>
-					<div className={styles.logo}>
-						<h2 className={styles.logo__name}>Дверная история</h2>
-						<p className={styles.logo__text}>16 лет вместе</p>
-					</div>{' '}
+					<Logo />
 					<div className={styles.map}></div>
 				</div>
 				<div className={styles.footer_bottom}>

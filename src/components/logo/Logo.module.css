@@ -1,0 +1,16 @@
+.logo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* gap: 0 15px; */
+	font-family: 'Satisfy';
+}
+
+.logo__name {
+	font-size: 36px;
+}
+
+.logo__text {
+	font-size: 26px;
+	line-height: 1;
+}
