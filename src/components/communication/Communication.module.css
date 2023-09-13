@@ -5,6 +5,7 @@
 .communication_box {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .communication_box__form {
@@ -28,12 +29,16 @@
 }
 
 .desc_box__item {
-	margin-bottom: 70px;
-	padding: 70px 20px 70px 20px;
+	padding: 0 20px 0 30px;
 	display: flex;
 	align-items: center;
 	border-radius: 20px;
+	height: 200px;
 	box-shadow: -20px 20px 20px 20px rgba(0, 0, 0, 0.04);
+}
+
+.desc_box__item:first-child {
+	margin-bottom: 40px;
 }
 
 .desc_box__text {
@@ -41,4 +46,8 @@
 	font-size: 26px;
 	line-height: 1.2;
 	color: #383451;
+	font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
 }
