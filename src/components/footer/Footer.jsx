@@ -26,8 +26,11 @@ const Footer = () => {
 					</div>
 					<Logo />
 					<div className={styles.map}>
-						<h2 className={styles.map__title}>Адрес</h2>
-
+						<h2 className={styles.map__title}>Адрес:</h2>
+						<p className={styles.map__desc}>
+							г. Орел, ул. Полесская, д. 9 (р-н ТЦ "Атолл", рядом с кафе
+							"Жар-Пицца")
+						</p>
 						<LocationMap />
 					</div>
 				</div>

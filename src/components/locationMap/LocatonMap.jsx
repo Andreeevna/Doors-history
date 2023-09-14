@@ -6,7 +6,7 @@ const LocationMap = () => {
 		<YMaps>
 			<div>
 				<Map
-					width='350px'
+					width='400px'
 					height='300px'
 					defaultState={{
 						center: [52.971629, 36.056318],
