@@ -5,6 +5,7 @@ import Logo from '../logo/Logo'
 import './../../assets/styles/index.css'
 import styles from './Footer.module.css'
 
+import LocationMap from '../locationMap/LocatonMap'
 import Tg from './../../assets/images/icons/telegram-svgrepo-com.svg'
 import Vk from './../../assets/images/icons/vk-svgrepo-com.svg'
 import Wh from './../../assets/images/icons/whatsapp-svgrepo-com.svg'
@@ -26,6 +27,8 @@ const Footer = () => {
 					<Logo />
 					<div className={styles.map}>
 						<h2 className={styles.map__title}>Адрес</h2>
+
+						<LocationMap />
 					</div>
 				</div>
 				<div className={styles.footer_bottom}>
@@ -33,18 +36,18 @@ const Footer = () => {
 					<ul className={styles.social__list}>
 						<li className={styles.social__item}>
 							<Link to='/' className={styles.social__link}>
-								<img className={styles.social__img} src={Vk} />
+								<img className={styles.social__img} src={Vk} alt='Vkontakte' />
 							</Link>
 						</li>
 
 						<li className={styles.social__item}>
 							<Link to='/' className={styles.social__link}>
-								<img className={styles.social__img} src={Wh} />
+								<img className={styles.social__img} src={Wh} alt='WhatsApp' />
 							</Link>
 						</li>
 						<li className={styles.social__item}>
 							<Link to='/' className={styles.social__link}>
-								<img className={styles.social__img} src={Tg} />
+								<img className={styles.social__img} src={Tg} alt='Telegram' />
 							</Link>
 						</li>
 					</ul>
