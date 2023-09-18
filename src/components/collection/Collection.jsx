@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import './../../assets/styles/index.css'
 import styles from './Collection.module.css'
 
+import Classic1 from './../../assets/images/collection/classic2.jpg'
 import Classic from './../../assets/images/collection/classic3.jpg'
 
 const Collection = () => {
@@ -13,7 +14,7 @@ const Collection = () => {
 			<div className={cn('av_container', styles.collection_container)}>
 				<div className={styles.collection_item}>
 					<Link to='/' className={styles.collection_item__img}>
-						<img src={Classic} alt='Сlassic collection' />
+						<img src={Classic1} alt='Сlassic collection' />
 					</Link>
 					<div className={styles.collection_item__info}>
 						<div className={styles.collection_item__text}>
