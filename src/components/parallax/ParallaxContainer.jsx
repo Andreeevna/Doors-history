@@ -8,7 +8,12 @@ import styles from './ParallaxContainer.module.css'
 
 const ParallaxContainer = () => {
 	return (
-		<Parallax blur={0} bgImage={PanelPng} bgImageAlt='the cat' strength={600}>
+		<Parallax
+			speed={-10}
+			bgImage={PanelPng}
+			bgImageAlt='Wall panel'
+			strength={600}
+		>
 			<div className='bg_container'>
 				<div className={styles.parallax_inner}>
 					<h2 className={styles.title}>БЕЗГРАНИЧНЫЙ ВЫБОР</h2>
