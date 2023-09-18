@@ -5,8 +5,11 @@ import { Link } from 'react-router-dom'
 import './../../assets/styles/index.css'
 import styles from './Collection.module.css'
 
-import Classic1 from './../../assets/images/collection/classic2.jpg'
-import Classic from './../../assets/images/collection/classic3.jpg'
+import Classic1 from './../../assets/images/collection/classic3.jpg'
+import Sliding from './../../assets/images/collection/razd2.jpg'
+
+import Modern from './../../assets/images/collection/modern1.jpg'
+import Neo from './../../assets/images/collection/neoclassic.jpg'
 
 const Collection = () => {
 	return (
@@ -43,7 +46,7 @@ const Collection = () => {
 				</div>
 				<div className={styles.collection_item}>
 					<Link to='/' className={styles.collection_item__img}>
-						<img src={Classic} alt='Neoclassic collection' />
+						<img src={Neo} alt='Neoclassic collection' />
 					</Link>
 					<div className={styles.collection_item__info}>
 						<div className={styles.collection_item__text}>
@@ -72,7 +75,7 @@ const Collection = () => {
 				</div>
 				<div className={styles.collection_item}>
 					<Link to='/' className={styles.collection_item__img}>
-						<img src={Classic} alt='Сlassic collection' />
+						<img src={Modern} alt='Modern collection' />
 					</Link>
 					<div className={styles.collection_item__info}>
 						<div className={styles.collection_item__text}>
@@ -103,7 +106,7 @@ const Collection = () => {
 				</div>
 				<div className={styles.collection_item}>
 					<Link to='/' className={styles.collection_item__img}>
-						<img src={Classic} alt='Сlassic collection' />
+						<img src={Sliding} alt='Sliding partitions' />
 					</Link>
 					<div className={styles.collection_item__info}>
 						<div className={styles.collection_item__text}>
