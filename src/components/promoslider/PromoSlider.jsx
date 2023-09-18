@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { Autoplay, Navigation, Pagination } from 'swiper/modules'
+import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -9,25 +9,30 @@ import { SlArrowLeft, SlArrowRight } from 'react-icons/sl'
 
 // Import Swiper styles
 import 'swiper/css'
+import 'swiper/css/effect-fade'
 import 'swiper/css/navigation'
+
 import './../../assets/styles/index.css'
 import styles from './PromoSlider.module.css'
 import { dataSlider } from './dataSlider'
 
 const PromoSlider = () => {
+	const [slidePerView, setSlidePerView] = React.useState(1)
+
 	return (
 		<>
 			<Swiper
 				navigation={{ nextEl: '.next_slide', prevEl: '.prev_slide' }}
 				loop={true}
+				modules={[Autoplay, Pagination, Navigation, EffectFade]}
+				spaceBetween={1}
+				effect={'fade'}
+				slidesPerView={slidePerView}
 				autoplay={{
 					delay: 2500,
 					pauseOnMouseEnter: true,
 					disableOnInteraction: false,
 				}}
-				modules={[Autoplay, Pagination, Navigation]}
-				spaceBetween={1}
-				slidesPerView={1}
 				onSlideChange={() => console.log('slide change1')}
 				onSwiper={swiper => console.log(swiper)}
 			>
