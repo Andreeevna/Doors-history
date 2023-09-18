@@ -5,136 +5,75 @@ import { Link } from 'react-router-dom'
 import './../../assets/styles/index.css'
 import styles from './Collection.module.css'
 
-import Classic1 from './../../assets/images/collection/classic3.jpg'
-import Sliding from './../../assets/images/collection/razd2.jpg'
-
-import Modern from './../../assets/images/collection/modern1.jpg'
-import Neo from './../../assets/images/collection/neoclassic.jpg'
-
 const Collection = () => {
+	const data = [
+		{
+			id: '1cat',
+			imageUrl: '/images/collection/classic3.jpg',
+			alt: 'Сlassic collection',
+			name: 'Классика',
+			description: 'Решение вне времени для интерьеров со смыслом',
+		},
+		{
+			id: '2cat',
+			imageUrl: '/images/collection/neoclassic.jpg',
+			alt: 'Neoclassic collection',
+			name: 'Неоклассика',
+			description: 'Свежий взгляд на традиционный дизайн',
+		},
+		{
+			id: '3cat',
+			imageUrl: '/images/collection/modern1.jpg',
+			alt: 'Modern collection',
+			name: 'Современный стиль',
+			description: 'Акцент на геометрию и красоту простых форм',
+		},
+		{
+			id: '4cat',
+			imageUrl: '/images/collection/razd2.jpg',
+			alt: 'Sliding partitions',
+			name: 'раздвижные перегородки',
+			description: 'Оптимизация вашего пространства',
+		},
+	]
 	return (
 		<section className={styles.collection}>
 			<div className={cn('av_container', styles.collection_container)}>
-				<div className={styles.collection_item}>
-					<Link to='/' className={styles.collection_item__img}>
-						<img src={Classic1} alt='Сlassic collection' />
-					</Link>
-					<div className={styles.collection_item__info}>
-						<div className={styles.collection_item__text}>
-							<h2 className={styles.collection_item__title}>Классика</h2>
-							<p className={styles.collection_item__subtitle}>
-								Решение вне времени для интерьеров со смыслом
-							</p>
-						</div>
-						<Link
-							to='/'
-							className={cn(
-								styles.collection_item__button,
-								styles.btn,
-								styles.btn_dark,
-								styles.btn_animation
-							)}
-						>
-							<div className={cn(styles.btn__border, styles.btn__border_lr)}>
-								<div
-									className={cn(styles.btn__border, styles.btn__border_tb)}
-								></div>
+				{data.map(item => {
+					return (
+						<div className={styles.collection_item} key={item.id}>
+							<Link to='/' className={styles.collection_item__img}>
+								<img src={item.imageUrl} alt={item.alt} />
+							</Link>
+							<div className={styles.collection_item__info}>
+								<div className={styles.collection_item__text}>
+									<h2 className={styles.collection_item__title}>{item.name}</h2>
+									<p className={styles.collection_item__subtitle}>
+										{item.description}
+									</p>
+								</div>
+								<Link
+									to='/'
+									className={cn(
+										styles.collection_item__button,
+										styles.btn,
+										styles.btn_dark,
+										styles.btn_animation
+									)}
+								>
+									<div
+										className={cn(styles.btn__border, styles.btn__border_lr)}
+									>
+										<div
+											className={cn(styles.btn__border, styles.btn__border_tb)}
+										></div>
+									</div>
+									<span>узнать больше</span>
+								</Link>
 							</div>
-							<span>узнать больше</span>
-						</Link>
-					</div>
-				</div>
-				<div className={styles.collection_item}>
-					<Link to='/' className={styles.collection_item__img}>
-						<img src={Neo} alt='Neoclassic collection' />
-					</Link>
-					<div className={styles.collection_item__info}>
-						<div className={styles.collection_item__text}>
-							<h2 className={styles.collection_item__title}>Неоклассика</h2>
-							<p className={styles.collection_item__subtitle}>
-								Свежий взгляд на традиционный дизайн{' '}
-							</p>
 						</div>
-						<Link
-							to='/'
-							className={cn(
-								styles.collection_item__button,
-								styles.btn,
-								styles.btn_dark,
-								styles.btn_animation
-							)}
-						>
-							<div className={cn(styles.btn__border, styles.btn__border_lr)}>
-								<div
-									className={cn(styles.btn__border, styles.btn__border_tb)}
-								></div>
-							</div>
-							<span>узнать больше</span>
-						</Link>
-					</div>
-				</div>
-				<div className={styles.collection_item}>
-					<Link to='/' className={styles.collection_item__img}>
-						<img src={Modern} alt='Modern collection' />
-					</Link>
-					<div className={styles.collection_item__info}>
-						<div className={styles.collection_item__text}>
-							<h2 className={styles.collection_item__title}>
-								Современный стиль
-							</h2>
-							<p className={styles.collection_item__subtitle}>
-								Акцент на геометрию и красоту простых форм{' '}
-							</p>
-						</div>
-						<Link
-							to='/'
-							className={cn(
-								styles.collection_item__button,
-								styles.btn,
-								styles.btn_dark,
-								styles.btn_animation
-							)}
-						>
-							<div className={cn(styles.btn__border, styles.btn__border_lr)}>
-								<div
-									className={cn(styles.btn__border, styles.btn__border_tb)}
-								></div>
-							</div>
-							<span>узнать больше</span>
-						</Link>
-					</div>
-				</div>
-				<div className={styles.collection_item}>
-					<Link to='/' className={styles.collection_item__img}>
-						<img src={Sliding} alt='Sliding partitions' />
-					</Link>
-					<div className={styles.collection_item__info}>
-						<div className={styles.collection_item__text}>
-							<h2 className={styles.collection_item__title}>
-								раздвижные перегородки
-							</h2>
-							<p className={styles.collection_item__subtitle}>
-								Оптимизация вашего пространства
-							</p>
-						</div>
-						<Link
-							to='/'
-							className={cn(
-								styles.collection_item__button,
-								styles.btn,
-								styles.btn_animation,
-								styles.btn_dark
-							)}
-						>
-							<div className={cn(styles.btn__border, styles.btn__border_lr)}>
-								<div
-									className={cn(styles.btn__border, styles.btn__border_tb)}
-								></div>
-							</div>
-							<span>узнать больше</span>
-						</Link>
-					</div>
-				</div>
+					)
+				})}
 			</div>
 		</section>
 	)
