@@ -53,7 +53,7 @@ const Collection = () => {
 									</p>
 								</div>
 								<Link
-									to='/'
+									to='/products'
 									className={cn(
 										styles.collection_item__button,
 										styles.btn,
