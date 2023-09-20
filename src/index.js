@@ -3,7 +3,12 @@ import './assets/styles/index.css'
 
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Router from './routes/Router'
+import { BrowserRouter } from 'react-router-dom'
+import App from './components/app/App'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(<Router />)
+root.render(
+	<BrowserRouter>
+		<App />
+	</BrowserRouter>
+)

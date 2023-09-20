@@ -1,16 +1,17 @@
 import React from 'react'
 
+import RouterApp from '../../routes/Router'
 import Footer from '../footer/Footer'
 import Header from '../header/Header'
 
-const Layout = ({ children }) => {
+const App = () => {
 	return (
-		<div className='wrapper'>
+		<div className='app'>
 			<Header />
-			{children && <div>{children}</div>}
+			<RouterApp />
 			<Footer />
 		</div>
 	)
 }
 
-export default Layout
+export default App

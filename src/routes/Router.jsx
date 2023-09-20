@@ -1,21 +1,19 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import { routes } from './routes.data'
 
-const Router = () => {
+const RouterApp = () => {
 	return (
-		<BrowserRouter>
-			<Routes>
-				{routes.map(route => (
-					<Route
-						key={route.path}
-						path={route.path}
-						element={<route.component />}
-					/>
-				))}
-			</Routes>
-		</BrowserRouter>
+		<Routes>
+			{routes.map(route => (
+				<Route
+					key={route.path}
+					path={route.path}
+					element={<route.component />}
+				/>
+			))}
+		</Routes>
 	)
 }
 
-export default Router
+export default RouterApp
