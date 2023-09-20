@@ -1,0 +1,9 @@
+.header_bottom {
+}
+
+.header_main__img {
+	width: 100%;
+	max-height: 400px;
+	object-fit: cover;
+	opacity: 0.7;
+}
