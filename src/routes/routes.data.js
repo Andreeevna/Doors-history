@@ -1,5 +1,5 @@
+import Products from '../components/products/Products'
 import Home from '../screens/Home/Home'
-import ProductPage from '../screens/ProductPage/ProductPage'
 
 export const routes = [
 	{
@@ -8,6 +8,6 @@ export const routes = [
 	},
 	{
 		path: '/products',
-		component: ProductPage,
+		component: Products,
 	},
 ]
