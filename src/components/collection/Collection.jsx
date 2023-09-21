@@ -42,7 +42,7 @@ const Collection = () => {
 				{data.map(item => {
 					return (
 						<div className={styles.collection_item} key={item.id}>
-							<Link to='/' className={styles.collection_item__img}>
+							<Link to={`/products`} className={styles.collection_item__img}>
 								<img src={item.imageUrl} alt={item.alt} />
 							</Link>
 							<div className={styles.collection_item__info}>
