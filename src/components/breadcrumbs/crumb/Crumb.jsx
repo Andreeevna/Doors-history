@@ -9,6 +9,14 @@ const Crumb = ({ className, id, path, title, url }) => {
 	const match = useRouteMatch()
 	const { state } = useLocation()
 
+	const routeTo = event => {
+		event.preventDefault()
+		navigate(url, {
+			replace: true,
+			state: removeReminingCrumbs(),
+		})
+	}
+
 	const renderTitle = () => {
 		if (title === 'Home') {
 			return 'Иконка'
@@ -23,7 +31,7 @@ const Crumb = ({ className, id, path, title, url }) => {
 				renderTitle()
 			) : (
 				<>
-					<div onClick={() => {}}>{renderTitle()}</div>
+					<div onClick={routeTo}>{renderTitle()}</div>
 					<span>/</span>
 				</>
 			)}
