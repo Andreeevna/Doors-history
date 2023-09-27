@@ -1,13 +1,12 @@
 import React from 'react'
-import HeaderMain from '../../components/headerMain/HeaderMain'
+import Layout from '../../components/layout/Layout'
 import Products from '../../components/products/Products'
 
 const ProductPage = () => {
 	return (
-		<>
-			<HeaderMain />
+		<Layout>
 			<Products />
-		</>
+		</Layout>
 	)
 }
 

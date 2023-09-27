@@ -15,4 +15,8 @@ export const routes = [
 		path: '/products/:id',
 		component: Product,
 	},
+	// {
+	// 	path: '/breadcrumbs',
+	// 	component: Breadcrumbs,
+	// },
 ]
