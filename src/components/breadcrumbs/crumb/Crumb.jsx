@@ -13,7 +13,7 @@ const Crumb = ({ className, id, path, title, url }) => {
 		event.preventDefault()
 		navigate(url, {
 			replace: true,
-			state: removeReminingCrumbs(),
+			state: removeReminingCrumbs(state, url),
 		})
 	}
 

@@ -5,7 +5,7 @@ import styles from './Breadcrumbs.module.css'
 import Crumb from './crumb/Crumb'
 
 const Breadcrumbs = () => {
-	// state: {id, path, title, url}
+	// state: [{id, path, title, url}]
 	const { state } = useLocation()
 	return (
 		<nav className={styles.breadcrumbs}>
