@@ -2,6 +2,7 @@ import cn from 'classnames'
 import React from 'react'
 
 import { useLocation, useNavigate } from 'react-router-dom'
+import { removeReminingCrumbs } from '../../../utils/breadcrumbs'
 import styles from './Crumb.module.css'
 
 const Crumb = ({ className, id, path, title, url }) => {
