@@ -9,8 +9,6 @@ import Layout from '../layout/Layout'
 
 const Product = () => {
 	const { id } = useParams()
-	const params = useParams()
-	console.log(params)
 
 	const navigate = useNavigate()
 	const { data, isLoading, isFetching, isSuccess } = useGetProductQuery({
