@@ -11,7 +11,9 @@ const HeaderMain = () => {
 		<section className={styles.header_main}>
 			<img src={BG1} alt='Интерьер' className={styles.header_main__img} />
 
-			<div className={cn('av_container', styles.header_main__info)}></div>
+			<div className={cn('av_container', styles.header_main__info)}>
+				{/* <Breadcrumbs /> */}
+			</div>
 		</section>
 	)
 }

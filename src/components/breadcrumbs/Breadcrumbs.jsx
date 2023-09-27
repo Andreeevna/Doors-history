@@ -2,7 +2,7 @@ import React from 'react'
 import { useLocation } from 'react-router-dom'
 
 import styles from './Breadcrumbs.module.css'
-import Crumb from './Crumb'
+import Crumb from './crumb/Crumb'
 
 const Breadcrumbs = () => {
 	// state: {id, path, title, url}

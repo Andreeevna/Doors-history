@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderMain from '../../components/headerBottom/HeaderMain'
+import HeaderMain from '../../components/headerMain/HeaderMain'
 import Products from '../../components/products/Products'
 
 const ProductPage = () => {
