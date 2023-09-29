@@ -15,10 +15,10 @@ const Breadcrumbs = () => {
 			<nav className={styles.breadcrumbs}>
 				{pathnames.length ? (
 					<span className={styles.crumb}>
-						<Link to='/'>Home</Link>
+						<Link to='/'>Главная страница</Link>
 					</span>
 				) : (
-					<span className={styles.crumb}>Home</span>
+					<span className={styles.crumb}>Главная страница</span>
 				)}
 				{pathnames.map((name, index) => {
 					const routeTo = `/${pathnames.slice(0, index + 1).join('/')}`
