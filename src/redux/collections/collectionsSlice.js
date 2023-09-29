@@ -25,14 +25,14 @@ const collectionsSlice = createSlice({
 	name: 'collections',
 	initialState,
 	extraReducers: builder => {
-		builder.addCase(getCategories.pending, state => {
+		builder.addCase(getCollections.pending, state => {
 			state.isLoading = true
 		})
-		builder.addCase(getCategories.fulfilled, (state, action) => {
+		builder.addCase(getCollections.fulfilled, (state, action) => {
 			state.list = action.payload
 			state.isLoading = false
 		})
-		builder.addCase(getCategories.rejected, state => {
+		builder.addCase(getCollections.rejected, state => {
 			state.isLoading = false
 		})
 	},
