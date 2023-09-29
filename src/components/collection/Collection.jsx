@@ -1,13 +1,22 @@
 import cn from 'classnames'
 import React from 'react'
 
-import { useSelector } from 'react-redux'
-import { Link } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { Link, useNavigate } from 'react-router-dom'
+import { filterByCollection } from '../../redux/products/productsSlice'
 import './../../assets/styles/index.css'
 import styles from './Collection.module.css'
 
 const Collection = () => {
 	const { list } = useSelector(state => state.collections)
+
+	const dispatch = useDispatch()
+	const navigate = useNavigate()
+
+	const onPruducts = name => {
+		navigate('/products')
+		dispatch(filterByCollection(name))
+	}
 
 	return (
 		<section className={styles.collection}>
@@ -28,14 +37,14 @@ const Collection = () => {
 											{item.description}
 										</p>
 									</div>
-									<Link
-										to='/products'
+									<button
 										className={cn(
 											styles.collection_item__button,
 											styles.btn,
 											styles.btn_dark,
 											styles.btn_animation
 										)}
+										onClick={() => onPruducts(item.name)}
 									>
 										<div
 											className={cn(styles.btn__border, styles.btn__border_lr)}
@@ -48,7 +57,7 @@ const Collection = () => {
 											></div>
 										</div>
 										<span>узнать больше</span>
-									</Link>
+									</button>
 								</div>
 							</div>
 						)

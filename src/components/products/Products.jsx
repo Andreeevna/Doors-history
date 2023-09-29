@@ -6,13 +6,13 @@ import { Link } from 'react-router-dom'
 import styles from './Products.module.css'
 
 const Products = () => {
-	const { items } = useSelector(state => state.products)
+	const { filtered } = useSelector(state => state.products)
 
 	return (
 		<section className={styles.products}>
 			<div className={cn('bg_container', styles.products_container)}>
-				{items &&
-					items.map(item => {
+				{filtered &&
+					filtered.map(item => {
 						return (
 							<div className={styles.products_item} key={item.id}>
 								<Link

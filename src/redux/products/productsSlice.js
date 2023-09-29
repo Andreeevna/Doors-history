@@ -4,6 +4,7 @@ import { BASE_URL } from '../../utils/constants'
 
 const initialState = {
 	items: [],
+	filtered: [],
 	status: null,
 }
 
@@ -22,7 +23,15 @@ export const productsFetch = createAsyncThunk(
 const productsSlice = createSlice({
 	name: 'products',
 	initialState,
-	reducers: {},
+	reducers: {
+		filterByCollection: (state, action) => {
+			const filter = state.items.filter(
+				product => product.collection === action.payload
+			)
+			state.filtered = filter
+			console.log('filter', filter)
+		},
+	},
 	extraReducers: {
 		[productsFetch.pending]: (state, action) => {
 			state.status = 'pending'
@@ -36,5 +45,7 @@ const productsSlice = createSlice({
 		},
 	},
 })
+
+export const { filterByCollection } = productsSlice.actions
 
 export default productsSlice.reducer
