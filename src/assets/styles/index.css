@@ -1,64 +1,46 @@
-/* @font-face {
-	font-family: 'EuclidFlexLight';
-	src: url('../fonts/EuclidFlex/EuclidFlexLight.ttf') format('truetype');
+@font-face {
+	font-family: 'Adobe Arabic';
+	src: url('./../fonts/Adobe/bold/AdobeArabic-Bold.eot');
+	src: url('./../fonts/Adobe/bold/AdobeArabic-Bold.eot?#iefix')
+			format('embedded-opentype'),
+		url('./../fonts/Adobe/bold/AdobeArabic-Bold.woff2') format('woff2'),
+		url('./../fonts/Adobe/bold/AdobeArabic-Bold.woff') format('woff'),
+		url('./../fonts/Adobe/bold/AdobeArabic-Bold.ttf') format('truetype'),
+		url('./../fonts/Adobe/bold/AdobeArabic-Bold.svg#AdobeArabic-Bold')
+			format('svg');
+	font-weight: 700;
 	font-style: normal;
-	font-weight: 300;
+	font-display: swap;
 }
 
 @font-face {
-	font-family: 'EuclidFlexRegular';
-	src: url('../fonts/EuclidFlex/EuclidFlexRegular.ttf') format('truetype');
-	font-style: normal;
+	font-family: 'Adobe Arabic';
+	src: url('./../fonts/Adobe/regular/AdobeArabic-Regular.eot');
+	src: url('./../fonts/Adobe/regular/AdobeArabic-Regular.eot?#iefix')
+			format('embedded-opentype'),
+		url('./../fonts/Adobe/regular/AdobeArabic-Regular.woff2') format('woff2'),
+		url('./../fonts/Adobe/regular/AdobeArabic-Regular.woff') format('woff'),
+		url('./../fonts/Adobe/regular/AdobeArabic-Regular.ttf') format('truetype'),
+		url('./../fonts/Adobe/regular/AdobeArabic-Regular.svg#AdobeArabic-Regular')
+			format('svg');
 	font-weight: 400;
-}
-
-@font-face {
-	font-family: 'EuclidFlexMedium';
-	src: url('../fonts/EuclidFlex/EuclidFlexMedium.ttf') format('truetype');
 	font-style: normal;
-	font-weight: 500;
+	font-display: swap;
 }
 
 @font-face {
-	font-family: 'EuclidFlexSemiBold';
-	src: url('../fonts/EuclidFlex/EuclidFlexSemiBold.ttf') format('truetype');
-	font-style: normal;
-	font-weight: 600;
-}
-
-@font-face {
-	font-family: 'EuclidFlexBold';
-	src: url('../fonts/EuclidFlex/EuclidFlexBold.ttf') format('truetype');
-	font-style: normal;
-	font-weight: 700;
-}
-
-@font-face {
-	font-family: 'EuclidFlexItalic';
-	src: url('../fonts/EuclidFlex/EuclidFlexItalic.ttf') format('truetype');
+	font-family: 'Adobe Arabic';
+	src: url('./../fonts/Adobe/italic/AdobeArabic-Italic.eot');
+	src: url('./../fonts/Adobe/italic/AdobeArabic-Italic.eot?#iefix')
+			format('embedded-opentype'),
+		url('./../fonts/Adobe/italic/AdobeArabic-Italic.woff2') format('woff2'),
+		url('./../fonts/Adobe/italic/AdobeArabic-Italic.woff') format('woff'),
+		url('./../fonts/Adobe/italic/AdobeArabic-Italic.ttf') format('truetype'),
+		url('./../fonts/Adobe/italic/AdobeArabic-Italic.svg#AdobeArabic-Italic')
+			format('svg');
+	font-weight: 400;
 	font-style: italic;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: 'EuclidFlexMediumItalic';
-	src: url('../fonts/EuclidFlex/EuclidFlexMediumItalic.ttf') format('truetype');
-	font-style: italic;
-	font-weight: 500;
-}
-
-@font-face {
-	font-family: 'EuclidFlexMediumItalic';
-	src: url('../fonts/EuclidFlex/EuclidFlexMediumItalic.ttf') format('truetype');
-	font-style: italic;
-	font-weight: 500;
-}
-
-@font-face {
-	font-family: 'EuclidFlexBoldItalic';
-	src: url('../fonts/EuclidFlex/EuclidFlexBoldItalic.ttf') format('truetype');
-	font-style: italic;
-	font-weight: 700;
+	font-display: swap;
 }
 
 @font-face {
@@ -66,7 +48,7 @@
 	src: url('../fonts/368-font.otf');
 	font-style: normal;
 	font-weight: 300;
-} */
+}
 
 html {
 	box-sizing: border-box;
@@ -167,9 +149,11 @@ video {
 }
 
 body {
-	font-family: 'EuclidFlexRegular', 'sans serif';
+	font-family: 'Adobe Arabic', 'sans serif';
 	font-size: 16px;
 	line-height: 1;
+	color: #3c3c3b;
+	background-color: #fff;
 }
 ol,
 ul {
@@ -189,12 +173,6 @@ q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
-
-body {
-	font-size: 18px;
-	color: #3c3c3b;
-	background-color: #fff;
 }
 
 a {
