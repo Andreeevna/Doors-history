@@ -1,3 +1,5 @@
+@import './../../assets/styles/variables.css';
+
 .breadcrumbs {
 	position: absolute;
 	left: 1.5%;
@@ -11,8 +13,8 @@
 	position: relative;
 	padding-bottom: 4px;
 	padding-right: 4px;
-	color: #ffffff;
-	border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+	color: var(--color-light);
+	border-bottom: 1px solid var(--color-light-grey);
 }
 
 .crumb::after {
@@ -20,5 +22,5 @@
 	position: absolute;
 	bottom: 2px;
 	right: -15px;
-	color: rgb(255, 255, 255, 0.5);
+	color: var(--color-light-grey);
 }

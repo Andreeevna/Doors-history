@@ -1,9 +1,11 @@
+@import './../../assets/styles/variables.css';
+
 .parallax_inner {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	color: #fff;
+	color: var(--color-light);
 	height: 50vh;
 }
 

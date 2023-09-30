@@ -1,3 +1,5 @@
+@import './../../assets/styles/variables.css';
+
 .communication {
 	margin-top: 120px;
 	margin-bottom: 120px;
@@ -58,7 +60,7 @@
 	margin-left: 20px;
 	font-size: 26px;
 	line-height: 1.2;
-	color: #383451;
+	color: var(--color-medium-blue);
 	font-weight: 500;
 }
 

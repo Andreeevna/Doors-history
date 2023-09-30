@@ -1,3 +1,5 @@
+@import './../../assets/styles/variables.css';
+
 .promo_container {
 	position: relative;
 	height: 100vh;
@@ -13,15 +15,13 @@
 
 .promo__item_title {
 	margin-bottom: 20px;
-	font-family: 'EuclidFlexLight';
-
 	font-size: 64px;
-	font-weight: 300;
+	font-weight: 400;
 	color: inherit;
 }
 
 .promo__item_link {
 	padding-bottom: 2px;
 	letter-spacing: 1px;
-	border-bottom: 1px solid #3c3c3b;
+	border-bottom: 1px solid var(--color-dark);
 }

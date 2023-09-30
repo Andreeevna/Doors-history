@@ -1,3 +1,5 @@
+@import './variables.css';
+
 @font-face {
 	font-family: 'Adobe Arabic';
 	src: url('./../fonts/Adobe/bold/AdobeArabic-Bold.eot');
@@ -160,8 +162,8 @@ body {
 	font-family: 'Adobe Arabic', 'sans serif';
 	font-size: 16px;
 	line-height: 1;
-	color: #3c3c3b;
-	background-color: #fff;
+	color: var(--color-dark);
+	background-color: var(--color-light);
 }
 ol,
 ul {
@@ -210,7 +212,7 @@ a {
 .swiper-slide {
 	text-align: center;
 	font-size: 18px;
-	background: #fff;
+	background: var(--color-light);
 
 	/* Center slide text vertically */
 	display: flex;
@@ -262,5 +264,5 @@ a {
 
 .next_slide svg,
 .prev_slide svg {
-	fill: #fff;
+	fill: var(--color-light);
 }
