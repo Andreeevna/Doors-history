@@ -4,6 +4,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
 import { filterByCollection } from '../../redux/products/productsSlice'
+import { scrollToTop } from '../../utils/auxiliary'
 import './../../assets/styles/index.css'
 import styles from './Collection.module.css'
 
@@ -16,6 +17,7 @@ const Collection = () => {
 	const onPruducts = name => {
 		navigate('/products')
 		dispatch(filterByCollection(name))
+		scrollToTop()
 	}
 
 	return (

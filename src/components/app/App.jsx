@@ -15,9 +15,11 @@ const App = () => {
 	}, [dispatch])
 	return (
 		<div className='app'>
-			<Header />
-			<RouterApp />
-			<Footer />
+			<div id='main' style={{ overflowY: 'hidden' }}>
+				<Header />
+				<RouterApp />
+				<Footer />
+			</div>
 		</div>
 	)
 }
