@@ -29,7 +29,7 @@ const productsSlice = createSlice({
 				product => product.collection === action.payload
 			)
 			state.filtered = filter
-			console.log('filter', filter)
+			// console.log('filter', filter)
 		},
 	},
 	extraReducers: {
