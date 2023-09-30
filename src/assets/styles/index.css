@@ -44,10 +44,18 @@
 }
 
 @font-face {
-	font-family: 'Satisfy';
-	src: url('../fonts/368-font.otf');
+	font-family: 'AnastasiaScriptC';
+	src: url('./../fonts/AnastasiaScript/AnastasiaScriptC.eot');
+	src: url('./../fonts/AnastasiaScript/AnastasiaScriptC.eot?#iefix')
+			format('embedded-opentype'),
+		url('./../fonts/AnastasiaScript/AnastasiaScriptC.woff2') format('woff2'),
+		url('./../fonts/AnastasiaScript/AnastasiaScriptC.woff') format('woff'),
+		url('./../fonts/AnastasiaScript/AnastasiaScriptC.ttf') format('truetype'),
+		url('./../fonts/AnastasiaScript/AnastasiaScriptC.svg#AnastasiaScriptC')
+			format('svg');
+	font-weight: 400;
 	font-style: normal;
-	font-weight: 300;
+	font-display: swap;
 }
 
 html {
