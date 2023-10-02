@@ -267,3 +267,10 @@ a {
 .prev_slide svg {
 	fill: var(--color-light);
 }
+
+@media screen and (max-width: 576px) {
+	.next_slide,
+	.prev_slide {
+		display: none;
+	}
+}
