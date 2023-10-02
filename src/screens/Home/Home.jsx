@@ -3,6 +3,7 @@ import React from 'react'
 import Collection from '../../components/collection/Collection'
 import Info from '../../components/info/Info'
 
+import ParallaxContainer from '../../components/parallax/ParallaxContainer'
 import PromoSlider from '../../components/promoslider/PromoSlider'
 
 const Home = () => {
@@ -11,7 +12,7 @@ const Home = () => {
 			<PromoSlider />
 			<Info />
 			<Collection />
-			{/* <ParallaxContainer /> */}
+			<ParallaxContainer />
 			{/* <Сommunication /> */}
 		</>
 	)

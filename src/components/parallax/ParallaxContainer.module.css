@@ -24,3 +24,29 @@
 	line-height: 1.3;
 	text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+	.title {
+		font-size: 32px;
+	}
+
+	.text {
+		max-width: 80%;
+	}
+}
+
+@media screen and (max-width: 415px) {
+	.title {
+		font-size: 26px;
+	}
+
+	.text {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 340px) {
+	.title {
+		font-size: 22px;
+	}
+}
