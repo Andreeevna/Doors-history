@@ -39,28 +39,25 @@ const Collection = () => {
 											{item.description}
 										</p>
 									</div>
-									<button
-										className={cn(
-											styles.collection_item__button,
-											styles.btn,
-											styles.btn_dark,
-											styles.btn_animation
-										)}
-										onClick={() => onPruducts(item.name)}
+								</div>
+								<button
+									className={cn(
+										styles.collection_item__button,
+										styles.btn,
+										styles.btn_dark,
+										styles.btn_animation
+									)}
+									onClick={() => onPruducts(item.name)}
+								>
+									<div
+										className={cn(styles.btn__border, styles.btn__border_lr)}
 									>
 										<div
-											className={cn(styles.btn__border, styles.btn__border_lr)}
-										>
-											<div
-												className={cn(
-													styles.btn__border,
-													styles.btn__border_tb
-												)}
-											></div>
-										</div>
-										<span>узнать больше</span>
-									</button>
-								</div>
+											className={cn(styles.btn__border, styles.btn__border_tb)}
+										></div>
+									</div>
+									<span>узнать больше</span>
+								</button>
 							</div>
 						)
 					})}

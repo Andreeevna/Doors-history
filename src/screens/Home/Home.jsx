@@ -1,6 +1,8 @@
 import React from 'react'
 
+import Collection from '../../components/collection/Collection'
 import Info from '../../components/info/Info'
+
 import PromoSlider from '../../components/promoslider/PromoSlider'
 
 const Home = () => {
@@ -8,7 +10,7 @@ const Home = () => {
 		<>
 			<PromoSlider />
 			<Info />
-			{/* <Collection /> */}
+			<Collection />
 			{/* <ParallaxContainer /> */}
 			{/* <Сommunication /> */}
 		</>
