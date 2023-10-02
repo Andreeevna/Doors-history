@@ -3,8 +3,6 @@ import { useDispatch } from 'react-redux'
 
 import { getCollections } from '../../redux/collections/collectionsSlice'
 import { productsFetch } from '../../redux/products/productsSlice'
-import RouterApp from '../../routes/Router'
-import Footer from '../footer/Footer'
 import Header from '../header/Header'
 
 const App = () => {
@@ -16,8 +14,8 @@ const App = () => {
 	return (
 		<div className='app'>
 			<Header />
-			<RouterApp />
-			<Footer />
+			{/* <RouterApp />
+			<Footer /> */}
 		</div>
 	)
 }

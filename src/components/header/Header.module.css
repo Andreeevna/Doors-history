@@ -28,8 +28,42 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 5px 0;
+
+	/* gap: 3px 0; */
+}
+
+.contact__text {
+	font-size: 18px;
+	letter-spacing: 1px;
 }
 
 .contact__link {
+	font-size: 28px;
+}
+
+.icon__menu {
+	display: none;
+}
+
+.contact__link_icon {
+	display: none;
+}
+
+@media screen and (max-width: 576px) {
+	.header__contact {
+		display: none;
+	}
+	.header__menu_link {
+		display: none;
+	}
+	.icon__menu {
+		display: block;
+		font-size: 1.5em;
+	}
+	.contact__link_icon {
+		display: block;
+	}
+	.icon__contact {
+		font-size: 1.5em;
+	}
 }
