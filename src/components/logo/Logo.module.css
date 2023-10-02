@@ -15,6 +15,12 @@
 	line-height: 0.5;
 }
 
+@media screen and (max-width: 768px) {
+	.logo__name {
+		font-size: 32px;
+	}
+}
+
 @media screen and (max-width: 576px) {
 	.logo__name {
 		font-size: 26px;

@@ -274,3 +274,9 @@ a {
 		display: none;
 	}
 }
+
+@media screen and (max-width: 488px) {
+	.footer__logo {
+		display: none !important;
+	}
+}

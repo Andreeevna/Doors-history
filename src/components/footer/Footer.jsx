@@ -5,12 +5,12 @@ import Logo from '../logo/Logo'
 import './../../assets/styles/index.css'
 import styles from './Footer.module.css'
 
-import LocationMap from '../locationMap/LocatonMap'
 import Tg from './../../assets/images/icons/telegram-svgrepo-com.svg'
 import Vk from './../../assets/images/icons/vk-svgrepo-com.svg'
 import Wh from './../../assets/images/icons/whatsapp-svgrepo-com.svg'
 
 const Footer = () => {
+	const footerLogo = 'footer__logo'
 	return (
 		<footer className={styles.footer}>
 			<div className='bg_container'>
@@ -24,14 +24,13 @@ const Footer = () => {
 							8-953-615-38-88
 						</Link>
 					</div>
-					<Logo />
-					<div className={styles.map}>
-						<h2 className={styles.map__title}>Адрес:</h2>
-						<p className={styles.map__desc}>
+					<Logo footerLogo={footerLogo} />
+					<div className={styles.footer_top__adress}>
+						<h2 className={styles.footer_top__title}>Адрес:</h2>
+						<p className={styles.footer_top__desc}>
 							г. Орел, ул. Полесская, д. 9 (р-н ТЦ "Атолл", рядом с кафе
 							"Жар-Пицца")
 						</p>
-						<LocationMap />
 					</div>
 				</div>
 				<div className={styles.footer_bottom}>
