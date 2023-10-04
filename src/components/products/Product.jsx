@@ -73,7 +73,7 @@ const Product = () => {
 
 								<div className={styles.description}>
 									<div className={styles.description__title}>
-										Описание товара
+										Описание товара:
 									</div>
 									<div className={styles.description__text}>{data.desc}</div>
 								</div>
