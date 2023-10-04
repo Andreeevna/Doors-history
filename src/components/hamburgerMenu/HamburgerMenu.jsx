@@ -3,6 +3,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styles from './HamburgerMenu.module.css'
 
+import './../../assets/styles/index.css'
+
 const HamburgerMenu = ({ active, setActive }) => {
 	const items = [
 		{ value: 'Главная страница', href: '/' },
@@ -14,7 +16,7 @@ const HamburgerMenu = ({ active, setActive }) => {
 
 	return (
 		<div
-			className={active ? styles.active : styles.menu}
+			className={active ? 'menuBurger activeBurger' : 'menuBurger'}
 			onClick={() => setActive(false)}
 		>
 			<div className={styles.blur} />

@@ -6,14 +6,27 @@ import './../../assets/styles/index.css'
 import styles from './Header.module.css'
 
 import { AiOutlinePhone } from 'react-icons/ai'
+
 import Hamburger from '../hamburger/Hamburger'
 import HamburgerMenu from '../hamburgerMenu/HamburgerMenu'
+import './../../assets/styles/index.css'
 
 const Header = () => {
 	const [menuActive, setMenuActive] = useState(false)
+	const [header, setHeader] = useState(false)
+
+	const changeColorHeader = () => {
+		if (window.scrollY >= 80) {
+			setHeader(true)
+		} else {
+			setHeader(false)
+		}
+	}
+
+	window.addEventListener('scroll', changeColorHeader)
 
 	return (
-		<header className={styles.header}>
+		<header className={header ? 'header headerActive' : 'header'}>
 			<div className='bg_container'>
 				<div className={styles.nav}>
 					<div className={styles.header__menu}>
