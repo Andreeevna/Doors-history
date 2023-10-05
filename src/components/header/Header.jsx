@@ -26,7 +26,7 @@ const Header = () => {
 	window.addEventListener('scroll', changeColorHeader)
 
 	return (
-		<header className={header ? 'header headerActive' : 'header'}>
+		<header className={header || menuActive ? 'header headerActive' : 'header'}>
 			<div className='bg_container'>
 				<div className={styles.nav}>
 					<div className={styles.header__menu}>

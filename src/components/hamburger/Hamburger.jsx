@@ -1,14 +1,15 @@
 import React from 'react'
 
-import styles from './Hamburger.module.css'
+import { AiOutlineMenu } from 'react-icons/ai'
+
+import './Hamburger.css'
 
 const Hamburger = ({ active, setActive }) => {
 	return (
-		// <nav className={styles.burger_nav}>
-		<div className={styles.burger_btn} onClick={() => setActive(!active)}>
-			<span />
-		</div>
-		// </nav>
+		<AiOutlineMenu
+			className={active ? 'active burger_btn' : 'burger_btn'}
+			onClick={() => setActive(!active)}
+		></AiOutlineMenu>
 	)
 }
 

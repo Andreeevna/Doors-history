@@ -298,13 +298,13 @@ a {
 }
 
 .header {
-	/* position: absolute; */
+	padding-top: 10px;
 	position: fixed;
 	left: 0;
 	right: 0;
 	top: 0;
 	z-index: 100;
-	padding: 10px 0 10px 0;
+	height: 75px;
 	font-size: 18px;
 	color: var(--color-light);
 	background: linear-gradient(
@@ -316,5 +316,6 @@ a {
 }
 
 .header.headerActive {
-	background: var(--color-medium-grey);
+	background: var(--color-light);
+	color: var(--color-dark);
 }
