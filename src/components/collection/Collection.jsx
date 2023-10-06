@@ -2,7 +2,7 @@ import cn from 'classnames'
 import React from 'react'
 
 import { useDispatch, useSelector } from 'react-redux'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { filterByCollection } from '../../redux/products/productsSlice'
 import { scrollToTop } from '../../utils/auxiliary'
 import './../../assets/styles/index.css'
@@ -14,8 +14,8 @@ const Collection = () => {
 	const dispatch = useDispatch()
 	const navigate = useNavigate()
 
-	const onPruducts = name => {
-		navigate('/products')
+	const onPruducts = (name, collectionName) => {
+		navigate(`/products/${collectionName}`)
 		dispatch(filterByCollection(name))
 		scrollToTop()
 	}
@@ -27,9 +27,12 @@ const Collection = () => {
 					list.map(item => {
 						return (
 							<div className={styles.collection_item} key={item.id}>
-								<Link to={`/products`} className={styles.collection_item__img}>
+								<div
+									onClick={() => onPruducts(item.name, item.collectionName)}
+									className={styles.collection_item__img}
+								>
 									<img src={item.imageUrl} alt={item.alt} />
-								</Link>
+								</div>
 								<div className={styles.collection_item__info}>
 									<div className={styles.collection_item__text}>
 										<h2 className={styles.collection_item__title}>
@@ -47,7 +50,7 @@ const Collection = () => {
 										styles.btn_dark,
 										styles.btn_animation
 									)}
-									onClick={() => onPruducts(item.name)}
+									onClick={() => onPruducts(item.name, item.collectionName)}
 								>
 									<div
 										className={cn(styles.btn__border, styles.btn__border_lr)}

@@ -2,11 +2,13 @@ import cn from 'classnames'
 import React from 'react'
 
 import { useSelector } from 'react-redux'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import styles from './Products.module.css'
 
 const Products = () => {
 	const { filtered } = useSelector(state => state.products)
+
+	const { name } = useParams()
 
 	return (
 		<section className={styles.products}>
@@ -16,7 +18,7 @@ const Products = () => {
 						return (
 							<div className={styles.products_item} key={item.id}>
 								<Link
-									to={`/products/${item.id}`}
+									to={`/products/${name}/${item.id}`}
 									className={styles.products_item__img}
 								>
 									<img src={item.images[0]} alt='Межкомнатная дверь' />
