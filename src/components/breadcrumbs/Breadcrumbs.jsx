@@ -26,7 +26,7 @@ const Breadcrumbs = () => {
 					return isLast ? (
 						''
 					) : (
-						<span className={styles.crumb}>
+						<span className={styles.crumb} key={index + name}>
 							<Link to={`${routeTo}`}>{capatilize(name)}</Link>
 						</span>
 					)

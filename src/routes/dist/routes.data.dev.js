@@ -17,7 +17,7 @@ var routes = [{
   path: '/',
   component: _Home["default"]
 }, {
-  path: '/products/:name',
+  path: '/products/:name?',
   component: _ProductPage["default"]
 }, {
   path: '/products/:name/:id',
