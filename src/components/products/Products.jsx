@@ -3,6 +3,7 @@ import React from 'react'
 
 import { useSelector } from 'react-redux'
 import { Link, useParams } from 'react-router-dom'
+import Preloader from '../../employees/components/Preloader'
 import styles from './Products.module.css'
 
 const Products = () => {
@@ -13,7 +14,9 @@ const Products = () => {
 	return (
 		<section className={styles.products}>
 			<div className={cn('bg_container', styles.products_container)}>
-				{filtered &&
+				{!filtered ? (
+					<Preloader />
+				) : (
 					filtered.map(item => {
 						return (
 							<div className={styles.products_item} key={item.id}>
@@ -33,7 +36,8 @@ const Products = () => {
 								</div>
 							</div>
 						)
-					})}
+					})
+				)}
 			</div>
 		</section>
 	)

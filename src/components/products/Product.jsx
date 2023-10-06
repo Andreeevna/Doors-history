@@ -4,6 +4,7 @@ import styles from './Product.module.css'
 
 import { useNavigate, useParams } from 'react-router-dom'
 
+import Preloader from '../../employees/components/Preloader'
 import { useGetProductQuery } from '../../redux/api/apiSlice'
 import Layout from '../layout/Layout'
 
@@ -30,7 +31,9 @@ const Product = () => {
 
 	return (
 		<Layout>
-			{data && (
+			{isLoading || !data ? (
+				<Preloader />
+			) : (
 				<section className={styles.product}>
 					<div className='bg_container'>
 						<div className={styles.product__card}>
