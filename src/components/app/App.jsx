@@ -1,6 +1,8 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useLayoutEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 
+import { useLocation } from 'react-router-dom'
+import Preloader from '../../employees/components/Preloader'
 import { getCollections } from '../../redux/collections/collectionsSlice'
 import { productsFetch } from '../../redux/products/productsSlice'
 import RouterApp from '../../routes/Router'
@@ -13,7 +15,20 @@ const App = () => {
 		dispatch(productsFetch())
 		dispatch(getCollections())
 	}, [dispatch])
-	return (
+
+	const [loading, setLoading] = useState(true)
+	const { pathname } = useLocation()
+
+	useLayoutEffect(() => {
+		setLoading(true)
+		const timer = setTimeout(() => {
+			setLoading(false)
+		}, 1500)
+		return () => clearTimeout(timer)
+	}, [pathname])
+	return loading ? (
+		<Preloader />
+	) : (
 		<div className='app'>
 			<Header />
 			<RouterApp />
