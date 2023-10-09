@@ -48,6 +48,8 @@ const Collection = () => {
 									clickHandler={() =>
 										onPruducts(item.name, item.collectionName)
 									}
+									affiliation={'btn_collection'}
+									btnColor={'btn_dark'}
 								/>
 							</div>
 						)

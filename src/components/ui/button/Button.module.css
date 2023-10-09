@@ -1,4 +1,13 @@
-.collection_item__button {
+.btn_parallax {
+	margin-top: 18px;
+	/* margin-bottom: 14px; */
+	margin-right: 15px;
+	padding: 12px 25px 12px 25px;
+	display: inline-block;
+	text-align: center;
+}
+
+.btn_collection {
 	margin-top: 14px;
 	margin-bottom: 14px;
 	margin-right: 15px;
@@ -24,12 +33,17 @@
 	background-color: var(--color-dark-button-background);
 }
 
+.btn_light {
+	color: var(--color-dark-button-background);
+	background-color: var(--color-light);
+}
+
 .btn_animation {
 	position: relative;
 }
 
 .btn_animation.btn_dark {
-	border: none;
+	border: 1px solid transparent;
 	background: linear-gradient(
 		90deg,
 		var(--color-light) 50%,
@@ -40,85 +54,28 @@
 	transition: all 0.3s ease;
 }
 
+.btn_animation.btn_light {
+	border: 1px solid transparent;
+	background: linear-gradient(
+		90deg,
+		var(--color-dark-button-background) 50%,
+		var(--color-light) 0
+	);
+	background-size: 200% 100%;
+	background-position: 100% 100%;
+	transition: all 0.3s ease;
+}
+
 .btn_animation.btn_dark:hover {
 	background-position: 0 100%;
 	color: var(--color-dark-grey);
+	border: 1px solid var(--color-dark);
 }
 
-.btn__border_lr {
-	position: absolute;
-	margin: auto;
-	top: -5px;
-	left: -5px;
-	right: -5px;
-	bottom: -5px;
-	width: calc(100% + 10px);
-	height: calc(100% + 10px);
-}
-
-.btn__border_lr::before {
-	content: '';
-	position: absolute;
-	width: 1px;
-	height: 100%;
-	transform: scaleY(0);
-	transition: all 0.1s ease;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	transform-origin: left;
-}
-
-.btn_animation.btn_dark.btn__border_lr::before {
-	background: #6b6b6b;
-}
-
-.btn__border_lr::after {
-	right: 0;
-	bottom: 0;
-	transform-origin: top;
-	transition-delay: 0.1s;
-	content: '';
-	position: absolute;
-	width: 1px;
-	height: 100%;
-	transform: scaleY(0);
-	transition: all 0.1s ease;
-}
-
-.btn_animation.btn_dark.btn__border_lr::after {
-	background: #6b6b6b;
-}
-
-.btn__border_tb {
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
-}
-
-.btn__border_tb::after,
-.btn__border_tb::before {
-	content: '';
-	position: absolute;
-	height: 1px;
-	width: 100%;
-	transform: scaleX(0);
-	transition: all 0.2s ease;
-	transition-delay: 0.05s;
-	transform-origin: left;
-}
-
-.btn__border_tb::before {
-	left: 0;
-	top: 0;
-}
-
-.btn__border_tb::after {
-	left: 0;
-	bottom: 0;
+.btn_animation.btn_light:hover {
+	background-position: 0 100%;
+	color: var(--color-light);
+	border: 1px solid var(--color-light);
 }
 
 @media screen and (max-width: 992px) {
