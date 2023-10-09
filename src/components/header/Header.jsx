@@ -11,7 +11,7 @@ import Hamburger from '../hamburger/Hamburger'
 import HamburgerMenu from '../hamburgerMenu/HamburgerMenu'
 import './../../assets/styles/index.css'
 
-const Header = () => {
+const Header = ({ loading }) => {
 	const [menuActive, setMenuActive] = useState(false)
 	const [header, setHeader] = useState(false)
 
@@ -26,7 +26,12 @@ const Header = () => {
 	window.addEventListener('scroll', changeColorHeader)
 
 	return (
-		<header className={header || menuActive ? 'header headerActive' : 'header'}>
+		<header
+			className={
+				header || menuActive ? 'header headerActive' : 'header'
+				// (loading ? 'header_pos' : 'header')
+			}
+		>
 			<div className='bg_container'>
 				<div className={styles.nav}>
 					<div className={styles.header__menu}>

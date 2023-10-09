@@ -319,3 +319,7 @@ a {
 	background: var(--color-light);
 	color: var(--color-dark);
 }
+
+.header_pos {
+	position: static;
+}

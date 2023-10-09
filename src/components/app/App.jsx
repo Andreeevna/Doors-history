@@ -23,11 +23,18 @@ const App = () => {
 		setLoading(true)
 		const timer = setTimeout(() => {
 			setLoading(false)
-		}, 1500)
+		}, 1200)
 		return () => clearTimeout(timer)
 	}, [pathname])
 	return loading ? (
-		<Preloader />
+		<>
+			<Preloader />
+			<div className='app'>
+				<Header loading={loading} />
+				<RouterApp />
+				<Footer />
+			</div>
+		</>
 	) : (
 		<div className='app'>
 			<Header />

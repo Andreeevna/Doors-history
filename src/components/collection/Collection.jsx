@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { filterByCollection } from '../../redux/products/productsSlice'
 import { scrollToTop } from '../../utils/auxiliary'
+import Button from '../ui/button/Button'
 import './../../assets/styles/index.css'
 import styles from './Collection.module.css'
 
@@ -43,24 +44,11 @@ const Collection = () => {
 										</p>
 									</div>
 								</div>
-								<button
-									className={cn(
-										styles.collection_item__button,
-										styles.btn,
-										styles.btn_dark,
-										styles.btn_animation
-									)}
-									onClick={() => onPruducts(item.name, item.collectionName)}
-								>
-									<div
-										className={cn(styles.btn__border, styles.btn__border_lr)}
-									>
-										<div
-											className={cn(styles.btn__border, styles.btn__border_tb)}
-										></div>
-									</div>
-									<span>узнать больше</span>
-								</button>
+								<Button
+									clickHandler={() =>
+										onPruducts(item.name, item.collectionName)
+									}
+								/>
 							</div>
 						)
 					})}

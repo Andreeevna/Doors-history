@@ -8,7 +8,7 @@ const Preloader = () => {
 		<div className={styles.preloader}>
 			<div className={styles.fade}></div>
 
-			<ClipLoader color='#fff' loading size={100} className={styles.load} />
+			<ClipLoader color='#fff' loading size={60} className={styles.load} />
 		</div>
 	)
 }
