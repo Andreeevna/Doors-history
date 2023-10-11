@@ -2,12 +2,15 @@ import React, { useEffect, useLayoutEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 
 import { useLocation } from 'react-router-dom'
+
 import Preloader from '../../employees/components/Preloader'
 import { getCollections } from '../../redux/collections/collectionsSlice'
 import { productsFetch } from '../../redux/products/productsSlice'
 import RouterApp from '../../routes/Router'
 import Footer from '../footer/Footer'
 import Header from '../header/Header'
+
+import './../../assets/styles/index.css'
 
 const App = () => {
 	const dispatch = useDispatch()

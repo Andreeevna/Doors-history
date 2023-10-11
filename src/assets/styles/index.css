@@ -60,10 +60,6 @@
 	font-display: swap;
 }
 
-html {
-	box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
@@ -158,6 +154,11 @@ video {
 	vertical-align: baseline;
 }
 
+html {
+	box-sizing: border-box;
+	height: 100%;
+}
+
 body {
 	font-family: 'Adobe Arabic', 'sans serif';
 	font-size: 16px;
@@ -166,6 +167,10 @@ body {
 	background-color: var(--color-light);
 	height: 100vh;
 }
+
+.app {
+}
+
 ol,
 ul {
 	list-style: none;
