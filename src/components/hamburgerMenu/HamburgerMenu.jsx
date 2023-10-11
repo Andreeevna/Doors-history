@@ -8,7 +8,7 @@ import './../../assets/styles/index.css'
 const HamburgerMenu = ({ active, setActive }) => {
 	const items = [
 		{ value: 'Главная страница', href: '/' },
-		{ value: 'Каталог', href: '/' },
+		{ value: 'Каталог', href: '/catalog' },
 		{ value: 'Акции', href: '/' },
 		{ value: 'Новинки', href: '/' },
 		{ value: 'Адреса магазинов', href: '/' },

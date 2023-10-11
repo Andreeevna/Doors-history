@@ -5,7 +5,6 @@ const Layout = ({ children }) => {
 	return (
 		<>
 			<HeaderMain />
-			{/* <Breadcrumbs /> */}
 			{children && children}
 		</>
 	)
