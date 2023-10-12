@@ -1,7 +1,9 @@
 import Product from '../components/products/Product'
 import Catalog from '../screens/Catalog/Catalog'
 import Home from '../screens/Home/Home'
+import LocationPage from '../screens/LocationPage/LocationPage'
 import ProductPage from '../screens/ProductPage/ProductPage'
+import StocksPage from '../screens/StocksPage/StocksPage'
 
 export const routes = [
 	{
@@ -19,5 +21,13 @@ export const routes = [
 	{
 		path: '/catalog',
 		component: Catalog,
+	},
+	{
+		path: '/stocks',
+		component: StocksPage,
+	},
+	{
+		path: '/location',
+		component: LocationPage,
 	},
 ]

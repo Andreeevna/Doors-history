@@ -9,9 +9,9 @@ const HamburgerMenu = ({ active, setActive }) => {
 	const items = [
 		{ value: 'Главная страница', href: '/' },
 		{ value: 'Каталог', href: '/catalog' },
-		{ value: 'Акции', href: '/' },
+		{ value: 'Акции', href: '/stocks' },
 		{ value: 'Новинки', href: '/' },
-		{ value: 'Адреса магазинов', href: '/' },
+		{ value: 'Адреса магазинов', href: '/location' },
 	]
 
 	return (

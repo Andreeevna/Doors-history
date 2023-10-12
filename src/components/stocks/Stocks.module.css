@@ -1,0 +1,51 @@
+.stocks {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.stocks_container {
+	display: flex;
+	/* justify-content: space-between; */
+	gap: 30px;
+}
+
+.stocks__item {
+	margin-bottom: 35px;
+	flex: 0 0 25%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.stocks__img {
+	overflow: hidden;
+}
+
+.stocks__item img {
+	display: block;
+	width: 100%;
+	min-height: 230px;
+	object-fit: cover;
+	transition: transform 0.5s ease-in-out;
+	will-change: transform;
+}
+
+.stocks__item img:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.stocks__info {
+	margin-top: 15px;
+}
+
+.stocks__title {
+	margin-bottom: 15px;
+	font-size: 22px;
+}
+
+.stocks__desc {
+	font-style: italic;
+	font-size: 18px;
+}
