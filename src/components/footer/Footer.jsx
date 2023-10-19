@@ -37,18 +37,27 @@ const Footer = () => {
 					<h2 className={styles.footer_bottom__title}>Мы в соцсетях:</h2>
 					<ul className={styles.social__list}>
 						<li className={styles.social__item}>
-							<Link to='/' className={styles.social__link}>
+							<Link
+								to='https://vk.com/dveri.orel'
+								className={styles.social__link}
+							>
 								<img className={styles.social__img} src={Vk} alt='Vkontakte' />
 							</Link>
 						</li>
 
 						<li className={styles.social__item}>
-							<Link to='/' className={styles.social__link}>
+							<Link
+								to=' https://wa.me/79536153888'
+								className={styles.social__link}
+							>
 								<img className={styles.social__img} src={Wh} alt='WhatsApp' />
 							</Link>
 						</li>
 						<li className={styles.social__item}>
-							<Link to='/' className={styles.social__link}>
+							<Link
+								to='https://t.me/Histori3022'
+								className={styles.social__link}
+							>
 								<img className={styles.social__img} src={Tg} alt='Telegram' />
 							</Link>
 						</li>
