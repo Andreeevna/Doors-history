@@ -7,10 +7,19 @@ import styles from './Breadcrumbs.module.css'
 const Breadcrumbs = () => {
 	const location = useLocation()
 
+	const listName = {
+		['Межкомнатные двери']: 'products',
+		Неоклассика: 'neoclassic',
+	}
+
+	function getKeyByValue(object, value) {
+		return Object.keys(object).find(key => object[key] === value)
+	}
+
 	const breadCrumbView = () => {
 		const { pathname } = location
 		const pathnames = pathname.split('/').filter(item => item)
-		const capatilize = s => s.charAt(0).toUpperCase() + s.slice(1)
+		// const capatilize = s => s.charAt(0).toUpperCase() + s.slice(1)
 		return (
 			<nav className={styles.breadcrumbs}>
 				{pathnames.length ? (
@@ -27,7 +36,7 @@ const Breadcrumbs = () => {
 						''
 					) : (
 						<span className={styles.crumb} key={index + name}>
-							<Link to={`${routeTo}`}>{capatilize(name)}</Link>
+							<Link to={`${routeTo}`}>{getKeyByValue(listName, name)}</Link>
 						</span>
 					)
 				})}

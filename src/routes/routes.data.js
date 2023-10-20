@@ -1,4 +1,4 @@
-import Product from '../components/products/Product'
+import Products from '../components/products/Product'
 import Catalog from '../screens/Catalog/Catalog'
 import Home from '../screens/Home/Home'
 import LocationPage from '../screens/LocationPage/LocationPage'
@@ -16,7 +16,7 @@ export const routes = [
 	},
 	{
 		path: '/products/:name/:id',
-		component: Product,
+		component: Products,
 	},
 	{
 		path: '/catalog',
