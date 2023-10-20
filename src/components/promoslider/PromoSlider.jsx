@@ -33,8 +33,8 @@ const PromoSlider = () => {
 					pauseOnMouseEnter: true,
 					disableOnInteraction: false,
 				}}
-				onSlideChange={() => console.log('slide change1')}
-				onSwiper={swiper => console.log(swiper)}
+				// onSlideChange={() => console.log('slide change1')}
+				// onSwiper={swiper => console.log(swiper)}
 			>
 				{dataSlider.map(item => (
 					<SwiperSlide key={item.id}>

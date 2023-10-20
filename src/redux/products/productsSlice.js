@@ -25,6 +25,9 @@ const productsSlice = createSlice({
 	initialState,
 	reducers: {
 		filterByCollection: (state, action) => {
+			// if (action.payload === 'all') {
+			// 	state.filtered = state.items
+			// }
 			const filter = state.items.filter(
 				product => product.collection === action.payload
 			)
@@ -33,14 +36,15 @@ const productsSlice = createSlice({
 		},
 	},
 	extraReducers: {
-		[productsFetch.pending]: (state, action) => {
+		[productsFetch.pending]: state => {
 			state.status = 'pending'
 		},
 		[productsFetch.fulfilled]: (state, action) => {
 			state.items = action.payload
+			state.filtered = action.payload
 			state.status = 'success'
 		},
-		[productsFetch.rejected]: (state, action) => {
+		[productsFetch.rejected]: state => {
 			state.status = 'rejected'
 		},
 	},
