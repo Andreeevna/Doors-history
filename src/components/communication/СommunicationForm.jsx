@@ -1,9 +1,11 @@
 import emailjs from '@emailjs/browser'
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import styles from './СommunicationForm.module.css'
 
 const СommunicationForm = () => {
 	const form = useRef()
+	const [value, setValue] = useState('')
+	const [value2, setValue2] = useState('')
 
 	const sendEmail = e => {
 		e.preventDefault()
@@ -18,6 +20,8 @@ const СommunicationForm = () => {
 			.then(
 				result => {
 					console.log(result.text)
+					setValue('')
+					setValue2('')
 				},
 				error => {
 					console.log(error.text)
@@ -27,11 +31,23 @@ const СommunicationForm = () => {
 
 	return (
 		<form ref={form} onSubmit={sendEmail} className={styles.form}>
-			<input type='text' placeholder='Ваше имя' name='user_name' />
+			<input
+				type='text'
+				placeholder='Ваше имя'
+				name='user_name'
+				value={value}
+				onChange={e => {
+					setValue(e.target.value)
+				}}
+			/>
 			<input
 				type='number'
 				placeholder='+7 (888) 888-88-88'
 				name='user_number'
+				value={value2}
+				onChange={e => {
+					setValue2(e.target.value)
+				}}
 			/>
 			<button type='submit' value='Send' className={styles.form__submit_btn}>
 				Оставить заявку
