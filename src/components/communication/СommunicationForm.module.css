@@ -78,3 +78,25 @@
 	padding: 0 10px 0 10px;
 	cursor: pointer;
 }
+
+@media screen and (max-width: 452px) {
+	.answer_сontainer__title {
+		font-size: 22px;
+		text-align: center;
+		line-height: 1;
+	}
+
+	.answer_сontainer__text {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 397px) {
+	.answer_сontainer__title {
+		max-width: 70%;
+	}
+	.answer_сontainer__text {
+		max-width: 70%;
+		font-size: 14px;
+	}
+}
