@@ -7,7 +7,7 @@ const СommunicationForm = () => {
 	const form = useRef()
 	const [value, setValue] = useState('')
 	const [value2, setValue2] = useState('')
-	const [modalActive, setModalActive] = useState(true)
+	const [modalActive, setModalActive] = useState(false)
 
 	const sendEmail = e => {
 		e.preventDefault()
