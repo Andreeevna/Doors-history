@@ -52,3 +52,29 @@
 .form__submit_btn:hover {
 	opacity: 0.8;
 }
+.answer_сontainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.answer_сontainer__title {
+	margin-bottom: 10px;
+	font-size: 26px;
+	letter-spacing: 1px;
+}
+
+.answer_сontainer__text {
+	margin-bottom: 20px;
+	font-size: 22px;
+}
+
+.answer_сontainer__button {
+	border: none;
+	background-color: rgb(130, 225, 116);
+	border-radius: 5px;
+	font-size: 20px;
+	color: #fff;
+	padding: 0 10px 0 10px;
+	cursor: pointer;
+}

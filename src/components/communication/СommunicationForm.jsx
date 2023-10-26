@@ -62,7 +62,22 @@ const СommunicationForm = () => {
 					Оставить заявку
 				</button>
 			</form>
-			<Modal active={modalActive} setActive={setModalActive}></Modal>
+			<Modal active={modalActive} setActive={setModalActive}>
+				<div className={styles.answer_сontainer}>
+					<h2 className={styles.answer_сontainer__title}>
+						Ваша заявка успешно отправлена
+					</h2>
+					<p className={styles.answer_сontainer__text}>
+						Мы ответим вам в течение 24 часов.
+					</p>
+					<button
+						className={styles.answer_сontainer__button}
+						onClick={() => setModalActive(false)}
+					>
+						OK
+					</button>
+				</div>
+			</Modal>
 		</>
 	)
 }
